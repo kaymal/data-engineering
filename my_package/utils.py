@@ -1,6 +1,6 @@
 # Import needed functionality
 from collections import Counter
-
+import matplotlib.pyplot as plt
 
 def plot_counter(counter, n_most_common=2):
     # Subset the n_most_common items from the input counter
