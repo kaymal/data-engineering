@@ -1,0 +1,13 @@
+The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. 
+This module intends to replace several older modules and functions:
+
+os.system
+os.spawn*
+
+Information about how the subprocess module can be used to replace these modules and functions can be found in the following sections.
+
+See also PEP 324 – PEP proposing the subprocess module
+Using the subprocess Module
+The recommended approach to invoking subprocesses is to use the run() function for all use cases it can handle. For more advanced use cases, the underlying Popen interface can be used directly.
+
+The run() function was added in Python 3.5; if you need to retain compatibility with older versions, see the Older high-level API section.
